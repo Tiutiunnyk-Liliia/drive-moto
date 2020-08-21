@@ -13,7 +13,11 @@ $(function(){
         $('.tabs-content').removeClass('tabs-content--active');
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
+
+        /*addClass and removeClass "tab - active", "tabs-content - active"
+is applied to all tabs on the page simultaneously*/
     });
+
 
     $('.product-item__favorite').on('click',function () {
         $(this).toggleClass('product-item__favorite--active')
