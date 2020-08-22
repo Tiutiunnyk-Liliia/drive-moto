@@ -119,7 +119,7 @@
                 <button>еще</button>
             </div>
             <div class="catalog__filter-btn">
-                <select>
+                <select class="filter-style">
                     <option>По полулярности</option>
                     <option>По полулярности</option>
                     <option>По полулярности</option>
@@ -150,6 +150,7 @@
         </div>
 
         <div class="catalog__inner">
+
             <div class="catalog__inner-aside aside-filter">
                 <div class="tabs-wrapper">
                     <div class="tabs aside-filter__tabs">
@@ -162,6 +163,31 @@
                     </div>
                     <div class="tabs-container">
                         <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+                            <form class="aside-filter__form">
+                                <ul class="aside-filter__list">
+                                    <li class="aside-filter__item-drop">
+                                        <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+                                        <div class="aside-filter__content">
+                                            <div class="aside-filter__content-box">
+                                            <label class="aside-filter__content-label">
+                                                <input class="filter-style" type="checkbox">
+                                                В наличие
+                                            </label>
+                                            </div>
+                                            <div class="aside-filter__content-box">
+                                            <label class="aside-filter__content-label">
+                                                <input class="filter-style" type="checkbox">
+                                                Под заказ
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="aside-filter__item-list"></li>
+                                    <li class="aside-filter__item"></li>
+                                    <li class="aside-filter__item"></li>
+                                </ul>
+
+                            </form>
                         </div>
                         <div class="tabs-content aside-filter__tabs-content">
                             content-2
@@ -169,6 +195,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="catalog__inner-list">
                 <div class="product-item__wrapper ">
                     <button class="product-item__favorite">
