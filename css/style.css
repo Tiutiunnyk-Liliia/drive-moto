@@ -877,4 +877,29 @@ body{
 
 
 
+.aside-filter__tabs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-filter__tab{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    width: 50%;
+}
+
+.aside-filter__tab.tab--active{
+    color: #2F3035;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+}
+
+.aside-filter__tab.tab--active span{
+    border-bottom: 2px solid #1c62cd;
+    padding-bottom: 7px;
+}
+
 
