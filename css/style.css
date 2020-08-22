@@ -949,3 +949,14 @@ body{
     cursor: pointer;
 }
 
+.jq-checkbox,
+.jq-radio{
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #C4C4C4;
+    border-radius: 1px;
+    box-shadow: none;
+
+}
+
