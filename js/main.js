@@ -37,11 +37,66 @@ $(function(){
         $(this).next().slideToggle('200');
     });
 
+
+    var $range = $(".js-range-slider");
+    var $inputFrom = $(".js-input-from");
+    var $inputTo = $(".js-input-to");
+    var instance;
+    var min = 0;
+    var max = 1500000;
+    var from = 100000;
+    var to = 500000;
+
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         grid: false,
-        min: 100000,
-        max: 500000,
+        min: min,
+        max: max,
+        from: 100000,
+        to: 500000,
+        onStart: updateInputs,
+        onChange: updateInputs,
     });
+
+    instance = $range.data("ionRangeSlider");
+
+    function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+    }
+
+    $inputFrom.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+
+        instance.update({
+            from: val
+        });
+    });
+
+    $inputTo.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+
+        instance.update({
+            to: val
+        });
+    });
+
 
 });
