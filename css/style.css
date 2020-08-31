@@ -915,8 +915,8 @@ body{
 }
 
 .filter__item-drop{
-    margin-bottom: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .filter__item-drop::before{
@@ -938,6 +938,7 @@ body{
 .aside-filter__content{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .aside-filter__content-box{
@@ -1007,3 +1008,5 @@ input[type="checkbox" i]:focus{
 .aside-filter__content.aside-filter__content-radio{
     flex-wrap: nowrap;
 }
+
+

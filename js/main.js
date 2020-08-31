@@ -36,4 +36,7 @@ $(function(){
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle('200');
     });
+
+    $(".js-range-slider").ionRangeSlider();
+
 });
