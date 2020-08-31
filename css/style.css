@@ -937,6 +937,7 @@ body{
 
 .aside-filter__content{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .aside-filter__content-box{
@@ -949,14 +950,60 @@ body{
     cursor: pointer;
 }
 
-.jq-checkbox,
-.jq-radio{
+.jq-checkbox, .jq-radio{
     background: #fff;
     width: 14px;
     height: 14px;
     border: 1px solid #C4C4C4;
     border-radius: 1px;
     box-shadow: none;
+    vertical-align: -1px;
+    margin: 0 8px 0 0;
 
 }
 
+.jq-checkbox.checked,
+.jq-radio.checked{
+    background: #1c62cd;
+    border: 1px solid #1c62cd;
+}
+
+.jq-checkbox.checked .jq-checkbox__div{
+    width: 8px;
+    height: 6px;
+    margin: 3px 0 0 2px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(0);
+    background-image: url(../images/checked-icon.svg);
+}
+
+.jq-checkbox.filter-style.checked{
+    width: 14px;
+}
+
+.jq-checkbox.filter-style.focused{
+    width: 14px;
+}
+
+input.filter-style{
+    width: 14px;
+    height: 14px;
+}
+
+input[type="checkbox" i]:focus{
+    outline-offset: 0;
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.aside-filter__content.aside-filter__content-radio{
+    flex-wrap: nowrap;
+}
