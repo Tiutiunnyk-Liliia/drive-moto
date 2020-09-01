@@ -1012,7 +1012,6 @@ input[type="checkbox" i]:focus{
 
 .range-slider{
     position: relative;
-    height: 80px;
     width: 100%;
 }
 
@@ -1088,6 +1087,100 @@ input[type="checkbox" i]:focus{
 {
     background-color: transparent;
 }
+
+
+.aside-filter__item-list{
+    margin-top: 40px;
+
+}
+
+.filter__item-list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C4C4C4;
+    margin-top: 34px;
+    padding-left: 26px;
+}
+
+.filter__item-listtitle{
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 14px;
+}
+
+.filter__item-listselect{
+
+}
+
+.jq-selectbox__select {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #48494D;
+    height: 20px;
+    padding: 0 28px 0 3px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.jq-selectbox__trigger-arrow{
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.jq-selectbox__trigger {
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px;
+    top: 7px;
+    right: 13px;
+    transform: rotate(0deg);
+    border-left: none;
+}
+
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active{
+    background: transparent;
+    box-shadow: none;
+}
+
+.jq-selectbox.focused .jq-selectbox__select{
+    border: none;
+}
+
+.jq-selectbox li{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li:hover {
+    background-color: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li.selected {
+    background-color: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.jq-selectbox__dropdown {
+    padding-top: 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 0;
+    background: #FFF;
+    box-shadow: none;
+}
+
 
 
 
