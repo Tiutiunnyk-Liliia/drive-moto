@@ -19,7 +19,19 @@ $(function(){
 
     $('.product-item__favorite').on('click',function () {
         $(this).toggleClass('product-item__favorite--active')
-    })
+    });
+
+    $('.catalog__filter-btngrid').on('click', function () {
+        $(this).addClass('catalog__filter-button--active');
+        $('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
+        $('.product-item__wrapper').removeClass('product-item__wrapper--list')
+    });
+
+    $('.catalog__filter-btnline').on('click', function () {
+        $(this).addClass('catalog__filter-button--active');
+        $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+        $('.product-item__wrapper').addClass('product-item__wrapper--list')
+    });
 
     $('.product-slider').slick({
         slidesToScroll: 1,
