@@ -49,6 +49,12 @@ $(function(){
         $(this).next().slideToggle('200');
     });
 
+    $('.rate-yo').rateYo({
+        ratedFill: "#1C62CD",
+        spacing: "7px",
+        normalFill: "#c4c4c4"
+    });
+
 
     var $range = $(".js-range-slider");
     var $inputFrom = $(".js-input-from");
