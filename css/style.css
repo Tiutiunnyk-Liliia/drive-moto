@@ -1497,6 +1497,10 @@ input[type="checkbox" i]:focus{
     margin-bottom: 20px;
 }
 
+product-card__buttons a + a{
+    margin-left: 30px;
+}
+
 
 
 
