@@ -671,6 +671,20 @@ body{
     border-bottom: 2px solid #1C62CD;
 }
 
+.product-slider .slick-dots{
+    bottom: -30px;
+}
+
+.product-slider .slick-dots button{
+    background: #C4C4C4;
+    width: 14px;
+    height: 14px;
+}
+
+.product-slider .slick-dots .slick-active button{
+    background: #1c62cd;
+}
+
 .product-slider__slider-btnprev{
     left: -40px;
 }
