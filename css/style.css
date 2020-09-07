@@ -715,6 +715,18 @@ body{
     margin-bottom: 80px;
 }
 
+.banner-link{
+    width: 100%;
+}
+
+.banner-link__img{
+    display: block;
+}
+
+.banner-link__imgmobile{
+    display: none;
+}
+
 
 .footer{
     background-color: #f0f0f4;
