@@ -257,7 +257,7 @@ body{
     outline: none;
 }
 
-.slick-active button{
+.slick-dots.slick-active button{
     background-color: #fff;
     outline: none;
 }
