@@ -1677,6 +1677,10 @@ input[type="checkbox" i]:focus{
     padding: 10px 40px;
 }
 
+.product-card__btn--mobile{
+    display: none;
+}
+
 
 
 
