@@ -1681,6 +1681,10 @@ input[type="checkbox" i]:focus{
     display: none;
 }
 
+.footer__topdrop{
+    pointer-events: none;
+}
+
 
 
 
