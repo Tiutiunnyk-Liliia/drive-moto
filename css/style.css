@@ -133,9 +133,6 @@ body{
     background: #ffffff;
 }
 
-.menu-mobile__list--active {
-    transform: translateX(0);
-}
 
 .menu-mobile__item{
     position: relative;
@@ -257,7 +254,7 @@ body{
     outline: none;
 }
 
-.slick-dots.slick-active button{
+.banner-section__slider .slick-dots .slick-active button{
     background-color: #fff;
     outline: none;
 }
@@ -967,7 +964,7 @@ body{
 }
 
 .pagination-list__item{
-    padding: 6px 12px;
+    padding: 13px 12px;
     border: 2px solid transparent;
     margin: 0 4px;
     font-size: 18px;
@@ -1361,7 +1358,7 @@ input[type="checkbox" i]:focus{
     position: absolute;
     top: -7px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
 }
 
 .btn__checked .jq-checkbox.checked .jq-checkbox__div{
@@ -1604,6 +1601,7 @@ input[type="checkbox" i]:focus{
     font-size: 17px;
     line-height: 20px;
     color: rgba(47, 48, 53, 0.7);
+    position: relative;
 }
 
 .card__input-search{
@@ -1613,6 +1611,21 @@ input[type="checkbox" i]:focus{
     padding: 9px 37px 9px 17px;
     border: none;
     margin-right: 100px;
+}
+
+.card__input-searchbtn{
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/search-2.svg');
+    background-repeat: no-repeat;
+    z-index: 5;
+    top: 0;
+    right: 115px;
 }
 
 .card__label-pickup{
@@ -1664,6 +1677,7 @@ input[type="checkbox" i]:focus{
 
 .card__list-btn{
     margin-left: auto;
+    min-width: 140px;
 }
 
 .card__list-btn button{
@@ -1675,6 +1689,7 @@ input[type="checkbox" i]:focus{
     color: #FFFFFF;
     text-transform: uppercase;
     padding: 10px 40px;
+    border: none;
 }
 
 .product-card__btn--mobile{
