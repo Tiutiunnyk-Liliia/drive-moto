@@ -308,7 +308,7 @@ body{
     content: "";
     background-image: url(../images/icons-price.svg);
     position: absolute;
-    right: 0;
+    right: 8px;
     top: 8px;
     width: 15px;
     height: 18px;
@@ -319,19 +319,21 @@ body{
     font-size: 14px;
     line-height: 17px;
     color: #C4C4C4;
-    margin-right: 15px;
+    margin-right: 8px;
     background-image: url(../images/old-line.svg);
     background-repeat: no-repeat;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 2px 12px 2px 5px;
+    position: relative;
 }
 
 .sale-item__price-old::after{
     content: "";
     background-image: url(../images/icons-price-old.svg);
+    background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 6px;
     width: 8px;
     height: 10px;
 }
